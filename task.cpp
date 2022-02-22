@@ -5,5 +5,5 @@ int main()
 {
     std::string input;
     std::cin >> input;
-    std::cout << "ANSWER1" << input << std::endl;
+    std::cout << "ANSWER" << input << std::endl;
 }
