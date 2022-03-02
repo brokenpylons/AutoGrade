@@ -3,14 +3,18 @@ name: action
 on:
   push:
     branches: [master]
-  pull_request:
-    branches: [master]
+    paths:
+        - ".github/workflows/cpp.yml"
+        - "cpp/**"
 env:
   BUILD_TYPE: Release
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./cpp
 
     steps:
     - uses: actions/checkout@v2
@@ -22,4 +26,4 @@ jobs:
       run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}}
       
     - name: Test
-      run: cd ${{github.workspace}}/build/ && ./test.sh
+      run: ../test.sh
