@@ -1,0 +1,24 @@
+name: Kotlin
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "./kotlin/**"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./kotlin
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build
+        run: gradle build
+        
+      - name: Test
+        run: ../test.sh
