@@ -8,4 +8,3 @@
  */
 
 rootProject.name = "task"
-include("app")

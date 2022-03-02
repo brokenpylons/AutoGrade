@@ -1,9 +1,11 @@
 #include <string>
 #include <iostream>
+#include <fstream>
 
-int main() 
+int main(int argc, char** argv) 
 {
+    std::ifstream ifs(argv[1]);
     std::string input;
-    std::cin >> input;
+    ifs >> input;
     std::cout << "ANSWER" << input << std::endl;
 }
