@@ -5,7 +5,9 @@ on:
     branches: [master]
     paths:
         - ".github/workflows/cpp.yml"
-        - "cpp/**"
+        - "cpp/**"       
+  workflow_dispatch:
+ 
 env:
   BUILD_TYPE: Release
 
