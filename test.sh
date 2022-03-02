@@ -2,7 +2,6 @@ onexit() {
     rm -f pipe
 }
 trap onexit EXIT
-
 if [[ ! -p pipe ]]; then
     mkfifo pipe
 fi
