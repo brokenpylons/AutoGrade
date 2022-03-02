@@ -7,5 +7,5 @@ int main(int argc, char** argv)
     std::ifstream ifs(argv[1]);
     std::string input;
     ifs >> input;
-    std::cout << "ANSWER1" << input << std::endl;
+    std::cout << "ANSWER" << input << std::endl;
 }
