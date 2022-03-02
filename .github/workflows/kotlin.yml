@@ -4,6 +4,7 @@ on:
   push:
     branches: [master]
     paths:
+      - "./.github/workflows/kotlin.yml"
       - "./kotlin/**"
   workflow_dispatch:
 
