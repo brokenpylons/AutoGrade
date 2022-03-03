@@ -19,4 +19,4 @@ defaults:
 The project folder must contain a script ```./language/run.sh```.
 The scripts accepts the input file as the only argument and returns the result on the standard output.
 There is a script ```./test.sh``` which executes the ```./language/run.sh input``` and reports the results.
-The exit status ```0``` indicates all tests have passed, and the exit status ```1``` indicates some of the tests failed.
+The exit status ```0``` indicates all tests have passed, and the exit status ```n``` indicates ```n``` of the tests failed.
