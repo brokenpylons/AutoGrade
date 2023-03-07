@@ -17,6 +17,5 @@ fun echo(prefix: String, stream: InputStream) {
 }
 
 fun main(args: Array<String>) {
-    println(setOf(1, 2, 3).max());
     echo("ANSWER", File(args[0]).inputStream())
 }
