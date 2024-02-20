@@ -3,6 +3,8 @@ package task
 import java.io.File
 import java.io.InputStream
 
+// WARNING: This code is for testing the automatic tests, it has nothing to do with the task at hand.
+
 fun echo(prefix: String, stream: InputStream) {
     val buffer = mutableListOf<Byte>()
 

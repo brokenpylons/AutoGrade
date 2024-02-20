@@ -2,7 +2,9 @@
 #include <iostream>
 #include <fstream>
 
-int main(int argc, char** argv) 
+// WARNING: This code is for testing the automatic tests, it has nothing to do with the task at hand.
+
+int main(int argc, char** argv)
 {
     std::ifstream ifs(argv[1]);
     std::string input;
