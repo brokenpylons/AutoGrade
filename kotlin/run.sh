@@ -1,1 +1,1 @@
-gradle run -q --args="$@"
+./app/build/install/app/bin/app "$@"
