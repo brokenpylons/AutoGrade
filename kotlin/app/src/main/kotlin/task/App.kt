@@ -2,10 +2,9 @@ package task
 
 import java.io.File
 import java.io.InputStream
-import java.util.LinkedList
 
 fun echo(prefix: String, stream: InputStream) {
-    val buffer = LinkedList<Byte>()
+    val buffer = mutableListOf<Byte>()
 
     while (true) {
         val symbol = stream.read()
@@ -13,7 +12,7 @@ fun echo(prefix: String, stream: InputStream) {
         buffer.add(symbol.toByte())
 
     }
-    println(prefix + String(buffer.toByteArray()))
+    println(prefix + buffer.toByteArray().toString(Charsets.UTF_8))
 }
 
 fun main(args: Array<String>) {
