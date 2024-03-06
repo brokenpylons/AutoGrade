@@ -4,8 +4,9 @@ on:
   push:
     branches: [master]
     paths:
-        - ".github/workflows/python.yml"
-        - "python/**"
+      - ".github/workflows/python.yml"
+      - "python/**"
+      - "test.sh"
   workflow_dispatch:
 
 jobs:
