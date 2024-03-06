@@ -1,14 +1,6 @@
-onexit() {
-    rm -f pipe
-}
-trap onexit EXIT
-if [[ ! -p pipe ]]; then
-    mkfifo pipe
-fi
-
 pwd
 cat - <<<"INPUT" >pipe &
-output=$(./run.sh pipe)
+output=$(./run.sh <(cat - <<<"INPUT") >(cat -) >/dev/null)
 cat - <<<"$output"
 
 if [[ "$output" != "ANSWERINPUT" ]]

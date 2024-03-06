@@ -1,8 +1,8 @@
 import sys
 
-# WARNING: This code is for testing the automatic tests, it has nothing to do with the task at hand.
+# WARNING: This code has nothing to do with the task at hand. Feel free to delete it.
 
 if __name__ == '__main__':
-    with open(sys.argv[1], "r") as f:
-        value = f.read()
-        print("ANSWER" + value)
+    with open(sys.argv[1], "r") as i, open(sys.argv[2], "w") as i:
+        value = i.read()
+        o.write("ANSWER" + value)
