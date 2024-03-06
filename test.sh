@@ -1,5 +1,4 @@
 pwd
-cat - <<<"INPUT" >pipe &
 output=$(./run.sh <(cat - <<<"INPUT") >(cat -) >/dev/null)
 cat - <<<"$output"
 
